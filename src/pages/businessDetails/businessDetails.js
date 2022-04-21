@@ -1,6 +1,11 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-
+/**
+ * Displays detailed information about the business.
+ * The business gets passed in through the location.state property from react-router-dom.
+ * If there is no location.state then we redirect back to the homepage.
+ * @author Kevin Zaworski
+ */
 export default function BusinessDetails() {
     const location = useLocation();
     const navigate = useNavigate();

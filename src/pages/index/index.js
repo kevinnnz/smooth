@@ -3,6 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getDirectory } from '../../store/businessDirectorySlice';
 
+/**
+ * This page is the main page in the application. 
+ * It displays the business directory table, and tells redux to fetch the API
+ * @author Kevin Zaworski
+ */
 export default function Index() {
   const directory = useSelector((state, selector) => state.businessDirectory.directory);
   const dispatch = useDispatch();
