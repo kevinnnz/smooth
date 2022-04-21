@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+ul,li { 
+  list-style-type: none;
+  list-style-position:inside;
+  margin:0;
+  padding:0; 
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  border-top: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+}
+
+td { 
+  border-right: 1px solid black;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
